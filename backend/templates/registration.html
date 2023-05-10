@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Registration Form</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="module" crossorigin src="/assets/register-b1906633.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/LoginValidation-81b5d9d1.js">
+    <link rel="stylesheet" href="/assets/LoginValidation-fb6ec121.css">
+  </head>
+  <body>
+    <!--topbar-->
+    <section class="topbar d-flex align-item-center">
+      <div
+        class="container d-flex justify-content-center justify-content-md-between"
+      >
+        <div class="contact d-flex align-items-center">
+          <i class="bx bx-envelope d-flex align-items-center">
+            <a class="text-white email" href="emailto:contact@example.com"
+              >contact@example.com</a
+            >
+          </i>
+          <i class="bx bx-mobile-alt d-flex align-items-center ms-4">
+            <span class="mobile">+1 1234 56789 99</span>
+          </i>
+        </div>
+        <div class="social d-none d-md-flex align-itms-center">
+          <a href="#" class="twitter media">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a href="#" class="facebook media">
+            <i class="bx bxl-facebook-circle"></i>
+          </a>
+          <a href="#" class="instagram media">
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a href="#" class="linkedin media">
+            <i class="bx bxl-linkedin-square"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--header-->
+    <header class="header d-flex align-item-center sticked header-customized">
+      <div class="container-fluid container-xl d-flex align-item-center">
+        <a href="/" class="logo d-flex align-item-center">
+          <h1 class="impact d-flex">
+            <span class="text-nowrap">Helping Hand</span>
+            <span class="point">.</span>
+          </h1>
+        </a>
+        <nav class="navbar navbar-customized">
+          <ul class="nav-row">
+            <li class="nav-item">
+              <a class="nav-item-content" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-content" href="/#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-content" href="/#call">Call</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-content" href="/#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-content" href="/#testimonial">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-content" href="/#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-content" href="/#faq">FAQ</a>
+            </li>
+            <li class="nav-item" id="account-dropdown">
+              <a class="nav-link text-nowrap" data-bs-toggle="dropdown" href="#"
+                >Drop Down<i class="bx bx-chevron-down"></i
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Drop Down 1</a></li>
+                <div id="blank" class="blank"></div>
+                <div class="dropdown dropend" data-bs-toggle="dropdown">
+                  Dropdown button
+                  <i class="bx bx-chevron-down"></i>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Link 1</a></li>
+                    <li><a class="dropdown-item" href="#">Link 2</a></li>
+                    <li><a class="dropdown-item" href="#">Link 3</a></li>
+                    <li>
+                      <h5 class="dropdown-header">Dropdown header 2</h5>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Another link</a></li>
+                  </ul>
+                </div>
+
+                <li><a class="dropdown-item" href="#">Drop Down 2</a></li>
+                <li><a class="dropdown-item" href="#">Drop Down 3</a></li>
+                <li><a class="dropdown-item" href="#">Drop Down 4</a></li>
+              </ul>
+            </li>
+            <li id="login-nav-item" class="nav-item">
+              <a class="nav-item-content" href="/login.html">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Registration Form -->
+    <section class="bg-white">
+      <div class="container py-5 h-100">
+        <div class="row justify-content-center align-items-center h-100">
+          <div class="col-12 col-lg-9 col-xl-7">
+            <div
+              class="card shadow-2-strong card-registration bg-light rounded-0"
+              style="border-radius: 15px"
+            >
+              <div class="card-body p-4 p-md-5">
+                <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
+                <form action="/api/register" method="post">
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <label class="form-label" for="firstName"
+                          >First Name</label
+                        >
+                        <input
+                          type="text"
+                          id="firstName"
+                          class="form-control form-control-lg"
+                          autocomplete="off"
+                          name="firstName"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <label class="form-label" for="lastName"
+                          >Last Name</label
+                        >
+                        <input
+                          type="text"
+                          id="lastName"
+                          class="form-control form-control-lg"
+                          autocomplete="off"
+                          name="lastName"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4 d-flex align-items-center">
+                      <div class="form-outline datepicker w-100">
+                        <label for="userName" class="form-label"
+                          >User Name</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control form-control-lg"
+                          id="userName"
+                          name="username"
+                          autocomplete="off"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <h6 class="mb-2 pb-1">Gender:</h6>
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="femaleGender"
+                          value="female"
+                        />
+                        <label class="form-check-label" for="femaleGender"
+                          >Female</label
+                        >
+                      </div>
+
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="maleGender"
+                          value="male"
+                        />
+                        <label class="form-check-label" for="maleGender"
+                          >Male</label
+                        >
+                      </div>
+
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="otherGender"
+                          value="other"
+                        />
+                        <label class="form-check-label" for="otherGender"
+                          >Other</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4 pb-2">
+                      <div class="form-outline">
+                        <label class="form-label" for="emailAddress"
+                          >Email</label
+                        >
+                        <input
+                          type="email"
+                          id="emailAddress"
+                          class="form-control form-control-lg"
+                          autocomplete="off"
+                          name="email"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4 pb-2">
+                      <div class="form-outline">
+                        <label class="form-label" for="phoneNumber"
+                          >Phone Number</label
+                        >
+                        <input
+                          type="tel"
+                          id="phoneNumber"
+                          class="form-control form-control-lg"
+                          autocomplete="off"
+                          name="phone"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <label class="form-label" for="emailAddress"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        id="password"
+                        class="form-control form-control-lg"
+                        autocomplete="off"
+                        name="password"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="mt-4 pt-2">
+                    <button
+                      class="registration btn btn-lg"
+                      type="button"
+                      id="registration-button"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <a href="#">
+              <span id="impact1">Helping Hand</span>
+            </a>
+            <p id="para">
+              Cras fermentum odio eu feugiat lide par naso tierra. Justo eget
+              nada terra videa magna derita valies darta donna mare fermentum
+              iaculis eu non diam phasellus.
+            </p>
+            <div id="links" class="links d-flex">
+              <a href="#" class="twitter">
+                <i class="bx bxl-twitter bx-sm"></i>
+              </a>
+              <a herf="#" class="facebook">
+                <i class="bx bxl-facebook-circle bx-sm"></i>
+              </a>
+              <a href="#" class="instagram">
+                <i class="bx bxl-instagram bx-sm"></i>
+              </a>
+              <a href="#" class="linkedin">
+                <i class="bx bxl-linkedin bx-sm"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <h4>Useful Links</h4>
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About us</a>
+              </li>
+              <li>
+                <a href="#">Services</a>
+              </li>
+              <li>
+                <a href="#">Terms of services</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2">
+            <h4>Our Services</h4>
+            <ul>
+              <li>
+                <a href="#">Web Design</a>
+              </li>
+              <li>
+                <a href="#">Web Development</a>
+              </li>
+              <li>
+                <a href="#">Product Management</a>
+              </li>
+              <li>
+                <a href="#">Marketing</a>
+              </li>
+              <li>
+                <a href="#">Graphic Design</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h4>Contact Us</h4>
+            <p>
+              A108 Adam Street
+              <br />
+              New York, NY 535022
+              <br />
+              United States
+              <br />
+              <br />
+              <strong>Phone:</strong>
+              +1 5589 55488 55
+              <br />
+              <strong>Email:</strong>
+              info@example.com
+              <br />
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="copyright" class="container-fluid">
+        <div class="copy">
+          © Copyright
+          <strong>
+            <span>Helping Hand</span>
+          </strong>
+          . All Rights Reserved
+        </div>
+        <div class="credit">
+          Designed By
+          <a href="#">Me</a>
+        </div>
+      </div>
+    </footer>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="register-info-modal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="register-info-modal-title"></h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="register-info-modal-body"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              OK
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  
+  
+</html>

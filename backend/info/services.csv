@@ -1,0 +1,11 @@
+serviceId,title,type,cuisine1,cuisine2,perDayPrice,perMonthPrice,washClothes,washUtensils,cooking,cleaning,gardening,security,carType,carModel,pipeType,electricalAppliances
+1,cook,cooking,Indian,Chinese,-,-,-,-,yes,-,-,-,-,-,-,-
+2,driver,driving,-,-,perDay,perMonth,-,-,-,-,-,-,Sedan,Toyota,-,-
+3,plumber,fixing,-,-,-,-,-,-,-,-,-,-,-,-,PVC,-
+4,electrician,fixing,-,-,-,-,-,-,-,-,-,-,-,-,-,Yes
+5,maid,cleaning,-,-,-,-,yes,yes,-,yes,-,-,-,-,-,-
+6,carpenter,woodwork,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+7,AC service,AC repair/cleaning,-,-,-,-,-,-,-,yes,-,-,-,-,-,-
+8,cleaner,cleaning,-,-,-,-,-,-,-,yes,-,-,-,-,-,-
+9,gardener,taking care of plants,-,-,-,-,-,-,-,-,yes,-,-,-,-,-
+10,guard,giving security to the house,-,-,-,-,-,-,-,-,-,yes,-,-,-,-

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Form</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="module" crossorigin src="/assets/login-2bdcc62e.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/LoginValidation-81b5d9d1.js">
+    <link rel="stylesheet" href="/assets/LoginValidation-fb6ec121.css">
+  </head>
+
+  <body>
+    <!-- Loader  -->
+    <div id="load-container">
+      <div class="loader"></div>
+    </div>
+    <!-- Loader  -->
+    
+    <!--topbar-->
+    <section class="topbar d-flex align-item-center">
+      <div
+        class="container d-flex justify-content-center justify-content-md-between"
+      >
+        <div class="contact d-flex align-items-center">
+          <i class="bx bx-envelope d-flex align-items-center">
+            <a class="text-white email" href="emailto:contact@example.com"
+              >contact@example.com</a
+            >
+          </i>
+          <i class="bx bx-mobile-alt d-flex align-items-center ms-4">
+            <span class="mobile">+1 1234 56789 99</span>
+          </i>
+        </div>
+        <div class="social d-none d-md-flex align-itms-center">
+          <a href="#" class="twitter media">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a href="#" class="facebook media">
+            <i class="bx bxl-facebook-circle"></i>
+          </a>
+          <a href="#" class="instagram media">
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a href="#" class="linkedin media">
+            <i class="bx bxl-linkedin-square"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--header-->
+    <header class="header d-flex align-item-center sticked header-customized">
+      <div class="container-fluid container-xl d-flex align-item-center">
+        <a href="/" class="logo d-flex align-item-center">
+          <h1 class="impact d-flex">
+            <span class="text-nowrap">Helping Hand</span>
+            <span class="point">.</span>
+          </h1>
+        </a>
+        <nav class="navbar navbar-customized">
+          <ul class="nav-row">
+            <li class="nav-item">
+              <a class="nav-item-content" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-content" href="/#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-content" href="/#call">Call</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-content" href="/#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-content" href="/#testimonial">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-content" href="/#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-content" href="/#faq">FAQ</a>
+            </li>
+            <li class="nav-item" id="account-dropdown">
+              <a class="nav-link text-nowrap" data-bs-toggle="dropdown" href="#"
+                >Drop Down<i class="bx bx-chevron-down"></i
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Drop Down 1</a></li>
+                <div id="blank" class="blank"></div>
+                <div class="dropdown dropend" data-bs-toggle="dropdown">
+                  Dropdown button
+                  <i class="bx bx-chevron-down"></i>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Link 1</a></li>
+                    <li><a class="dropdown-item" href="#">Link 2</a></li>
+                    <li><a class="dropdown-item" href="#">Link 3</a></li>
+                    <li>
+                      <h5 class="dropdown-header">Dropdown header 2</h5>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Another link</a></li>
+                  </ul>
+                </div>
+
+                <li><a class="dropdown-item" href="#">Drop Down 2</a></li>
+                <li><a class="dropdown-item" href="#">Drop Down 3</a></li>
+                <li><a class="dropdown-item" href="#">Drop Down 4</a></li>
+              </ul>
+            </li>
+            <li id="login-nav-item" class="nav-item">
+              <a class="nav-item-content" href="/login.html">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Login Section -->
+    <section class="logintop">
+      <div class="container-fluid h-custom">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-md-9 col-lg-6 col-xl-5">
+            <img src="/draw2.webp" class="img-fluid" alt="Sample image" />
+          </div>
+          <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+            <form action="/api/login" method="POST">
+              <div
+                class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start"
+              >
+                <p class="lead fw-normal mb-0 me-3">Sign in with</p>
+                <button type="button" class="socialmedia btn btn-floating mx-1">
+                  <i class="bx bxl-facebook bx-xs"></i>
+                </button>
+
+                <button type="button" class="socialmedia btn btn-floating mx-1">
+                  <i class="bx bxl-twitter bx-xs"></i>
+                </button>
+
+                <button type="button" class="socialmedia btn btn-floating mx-1">
+                  <i class="bx bxl-linkedin bx-xs"></i>
+                </button>
+              </div>
+              <div class="divider d-flex align-items-center my-4">
+                <p class="text-center fw-bold mx-3 mb-0">Or</p>
+              </div>
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="email">Email address</label>
+                <input
+                  type="email"
+                  class="form-control form-control-lg email"
+                  placeholder="Enter a valid email address"
+                  autocomplete="off"
+                  name="email"
+                  required
+                />
+              </div>
+
+              <!-- Password input -->
+              <div class="form-outline mb-3">
+                <label class="form-label" for="password">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  class="form-control form-control-lg"
+                  placeholder="Enter password"
+                  autocomplete="off"
+                  name="password"
+                  required
+                />
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <!-- Checkbox -->
+                <div class="form-check mb-0">
+                  <input
+                    class="form-check-input me-2"
+                    name="remember_me"
+                    type="checkbox"
+                    value="1"
+                    id="remember-me-input"
+                  />
+                  <label class="form-check-label" for="remember-me-input">
+                    Remember me
+                  </label>
+                </div>
+                <!-- <a href="#!" class="text-body">Forgot password?</a> -->
+              </div>
+
+              <div class="text-center text-lg-start mt-4 pt-2">
+                <button
+                  type="button"
+                  class="loginbtn btn btn-lg"
+                  id="login-button"
+                >
+                  Login
+                </button>
+                <p class="small fw-bold mt-2 pt-1 mb-0">
+                  Don't have an account?
+                  <a href="registration.html" class="link-danger">Register</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid" id="blank"></div>
+      <div
+        class="loginfooter d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5"
+      >
+        <!-- Copyright -->
+        <div class="text-white mb-3 mb-md-0">
+          Copyright © 2023. All rights reserved.
+        </div>
+        <!-- Copyright -->
+
+        <!-- Right -->
+        <div class="links">
+          <a href="#!" class="text-white me-4">
+            <i class="bx bxl-facebook bx-sm"></i>
+          </a>
+          <a href="#!" class="text-white me-4">
+            <i class="bx bxl-twitter bx-sm"></i>
+          </a>
+          <a href="#!" class="text-white me-4">
+            <i class="bx bxl-google bx-sm"></i>
+          </a>
+          <a href="#!" class="text-white">
+            <i class="bx bxl-linkedin bx-sm"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </div>
+    </section>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="login-info-modal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="login-info-modal-title"></h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="login-info-modal-body"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              OK
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  
+  
+</html>
